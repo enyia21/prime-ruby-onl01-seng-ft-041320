@@ -6,11 +6,11 @@ def prime(number)
   prime_test_array << prime_test_array.select{|number| number.odd?}
 # test multiple numbers in an array to find out if they are prime_test_array
 # eliminate even numbers not equal to 2 because they are not prime
-if number > 3 || number < -3 
+if number > 3 || number < -3
   if number.even?
     return false
   else
-      if prime_test_array.any?{|dividend| number%dividend == 0} 
+      if prime_test_array.any?{|dividend| number%dividend == 0}
         return false
       else
         return true
