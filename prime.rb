@@ -23,7 +23,7 @@ if number > 3 || number < -3
 
 end
   # prime_test_array.any?
-number = 1999286473647362480
+number = 100234
 
 # number = Integer.sqrt(number.abs)
 # array = []
