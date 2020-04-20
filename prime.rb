@@ -16,11 +16,11 @@ def prime(number)
       prime_test_array = prime_test_array.select{|number| number.odd?}
       not_prime = true
       not_prime = prime_test_array.any? {|value| number % value == 0}
-      return !(not_prime) # this returns whether something is prime.  Uses double negative logic. 
+      return !(not_prime) # this returns whether something is prime.  Uses double negative logic.
     end
   end
 #take care of edge cases 2, and 3
-  if number.abs == 2 || number.abs == 3 
+  if number.abs == 2 || number.abs == 3
     return true
   elsif number.abs == 1 || number == 0
     return false
