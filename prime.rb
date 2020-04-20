@@ -15,7 +15,7 @@ if number > 3 || number < -3
     prime_test_array = (2..hi).to_a
     prime_test_array << prime_test_array.select{|number| number.odd?}
     not_prime = true
-    not_prime = prime_test_array.any? {|dividend| number%dividend == 0}
+    puts prime_test_array.any? {|dividend| number % dividend == 0}
     return !(not_prime)
     # return true
   end
