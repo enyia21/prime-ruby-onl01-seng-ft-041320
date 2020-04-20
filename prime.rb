@@ -4,6 +4,7 @@ def prime(number)
   hi = Integer.sqrt(number.abs)
   prime_test_array = (2..number).to_a
   prime_test_array << prime_test_array.select{|number| number.odd?}
+  puts prime_test_array
 # test multiple numbers in an array to find out if they are prime_test_array
 # eliminate even numbers not equal to 2 because they are not prime
 if number > 3 || number < -3
