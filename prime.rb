@@ -30,7 +30,7 @@ def prime(number)
 # else
 end
   # prime_test_array.any?
-number = 17
+number = 2
 
 # number = Integer.sqrt(number.abs)
 # array = []
