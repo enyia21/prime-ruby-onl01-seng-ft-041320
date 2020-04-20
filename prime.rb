@@ -29,4 +29,4 @@ number = 2
 # array = []
 # array = (2..number).to_a
 # puts array
-puts prime(number)
+puts "#{prime(number)}"
