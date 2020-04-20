@@ -14,7 +14,7 @@ if number > 3 || number < -3
     hi = Integer.sqrt(number.abs)
     prime_test_array = (2..hi).to_a
     prime_test_array << prime_test_array.select{|number| number.odd?}
-    not_Prime = true
+    not_prime = true
     not_prime << prime_test_array.any?{|dividend| number%dividend == 0}
     return !(not_prime)
     # return true
