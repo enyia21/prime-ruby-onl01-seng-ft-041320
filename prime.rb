@@ -26,7 +26,7 @@ def prime?(number)
 end
 #   # prime_test_array.any?
 # number = -1
-# 
+#
 # # number = Integer.sqrt(number.abs)
 # # array = []
 # # array = (2..number).to_a
