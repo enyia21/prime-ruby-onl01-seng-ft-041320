@@ -2,8 +2,8 @@
 # def prime(number)
 #   lo = 2
 #   hi = Integer.sqrt(number.abs)
-#   prime_test_array = 2...hi
-#
+#   prime_test_array = (2..number).to_a
+#   prime_test_array
 #   if number < 0
 #       if number == -1
 #         return false
