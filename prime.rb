@@ -10,15 +10,17 @@ if number > 3 || number < -3
   if number.even?
     return false
   else
-      if prime_test_array.any?{|dividend| number%dividend == 0}
-        return false
-      else
-        return true
-      end
-    end
+    return true
   end
-else
-  return true
+#       if prime_test_array.any?{|dividend| number%dividend == 0}
+#         return false
+#       else
+#         return true
+#       end
+#     end
+#   end
+# else
+  
 end
   # prime_test_array.any?
 number = 2
