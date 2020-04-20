@@ -6,28 +6,28 @@ def prime(number)
   # prime_test_array << prime_test_array.select{|number| number.odd?}
 # test multiple numbers in an array to find out if they are prime_test_array
 # eliminate even numbers not equal to 2 because they are not prime
-if number > 3 || number < -3
-  if number.even?
+  if number > 3 || number < -3
+    if number.even?
+      return false
+    else
+      lo = 2
+      hi = Integer.sqrt(number.abs)
+      prime_test_array = (3..hi).to_a
+      prime_test_array = prime_test_array.select{|number| number.odd?}
+      not_prime = true
+      not_prime = prime_test_array.any? {|value| number % value == 0}
+      return !(not_prime) # this returns whether something is prime.  Uses double negative logic. 
+    end
+  end
+#take care of edge cases 2, and 3
+  if number.abs == 2 || number.abs == 3 
+    return true
+  elsif number.abs == 1 || number == 0
     return false
   else
-    lo = 2
-    hi = Integer.sqrt(number.abs)
-    prime_test_array = (3..hi).to_a
-    prime_test_array = prime_test_array.select{|number| number.odd?}
-    not_prime = true
-    not_prime = prime_test_array.any? {|value| number % value == 0}
-    return !(not_prime)
-    # return true
-  end
-#       if prime_test_array.any?{|dividend| number%dividend == 0}
-#         return false
-#       else
-#         return true
-#       end
-#     end
+    puts "Logic failure"
   end
 # else
-
 end
   # prime_test_array.any?
 number = 101013
