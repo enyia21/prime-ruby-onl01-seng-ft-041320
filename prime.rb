@@ -17,6 +17,8 @@ if number > 3 || number < -3
       end
     end
   end
+else 
+  return true
 end
   # prime_test_array.any?
 number = 17
