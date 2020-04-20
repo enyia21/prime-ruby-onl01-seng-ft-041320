@@ -13,7 +13,7 @@ if number > 3 || number < -3
     lo = 2
     hi = Integer.sqrt(number.abs)
     prime_test_array = (3..hi).to_a
-    prime_test_array << prime_test_array.select{|number| number.odd?}
+    prime_test_array = prime_test_array.select{|number| number.odd?}
     not_prime = true
     puts prime_test_array.all? {|value| number % value != 0}
     return !(not_prime)
