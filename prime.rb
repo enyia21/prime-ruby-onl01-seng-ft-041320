@@ -2,7 +2,7 @@
 def prime(number)
   lo = 2
   hi = Integer.sqrt(number.abs)
-  prime_test_array = (2..number).to_a
+  prime_test_array = (2..hi).to_a
   prime_test_array << prime_test_array.select{|number| number.odd?}
   puts prime_test_array
 # test multiple numbers in an array to find out if they are prime_test_array
