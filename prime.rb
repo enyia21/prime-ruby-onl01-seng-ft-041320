@@ -21,7 +21,8 @@ else
   return true
 end
   # prime_test_array.any?
-number = 17
+number = 2
+
 # number = Integer.sqrt(number.abs)
 # array = []
 # array = (2..number).to_a
