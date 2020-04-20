@@ -20,7 +20,7 @@ if number > 3 || number < -3
 #     end
 #   end
 # else
-  
+
 end
   # prime_test_array.any?
 number = 2
